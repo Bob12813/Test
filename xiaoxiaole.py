@@ -32,7 +32,7 @@ def main():
     while True:
         score = game.start()
         flag = False
-        # 一轮游戏结束后玩家选择重玩或者退出
+        # 一轮游戏结束后玩家选择重玩或者退出本次游戏
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT or (event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE):
